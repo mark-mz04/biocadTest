@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <title>Biocad</title>
+</head>
+<body>
+    <main class="container">
+        <section class="search">
+            <div class="search-message text">Enter inventory number, guid or bims id</div>
+
+            <form class="search-wrapper">
+                <input class="search-wrapper-input fieldInput text" type="search" placeholder="A-001234">
+
+                <input class="search-wrapper-btn text" type="submit" value="Search">
+            </form>
+        </section>
+
+        <section class="result">
+            <div class="result-content">
+                <div class="result-content-header">
+                    <img src="images/logo.svg" alt="logo">
+
+                    <h3 class="result-content-header-title">
+                        Аналитические весы OHAUS Adventurer АХ324 (B715976163)
+                    </h3>
+                </div>
+
+                <div class="result-content-select-wrapper">
+                    <select class="result-content-dropList fieldInput text">
+                        <option>1 month</option>
+                        <option>3 month</option>
+                    </select>
+                </div>
+                
+                <form>
+                    <div class="result-content-radio">
+                        <input class="result-content-radioBtn" type="radio" id="calibration" name="radioBtn" value="Calibration" checked>
+                        <label for="calibration">Calibration</label>
+                        
+                        <input class="result-content-radioBtn" type="radio" id="measuring" name="radioBtn" value="measuring">
+                        <label for="measuring">Measuring</label>
+                        
+                        <input class="result-content-radioBtn" type="radio" id="using" name="radioBtn" value="using">
+                        <label for="using">Using</label>
+                    </div>
+                    
+                    <button class="result-content-btn" type="submit">Generate report</button>
+                </form>
+            </div>
+
+            <div class="result-info">
+                <p class="result-info-text"><span class="result-info-subtitle">Тип оборудования:</span> Весы</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Статус:</span> Готов к работе</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Изготовитель:</span> Ohaus</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Модель:</span> Весы</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Ответственное подразделение (ремонт):</span> Группа обслуживания лабораторного оборудования</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Эксплуатирующее подразделение:</span> Химико-аналитическая лаборатория 2.0</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">МОЛ:</span> Иванов Иван Иванович</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Территория:</span> г. Санкт-Петербург (Нойдорф)</p>
+
+                <p class="result-info-text"><span class="result-info-subtitle">Серийный номер:</span> B715976163</p>
+
+                <p class="result-info-text blueText"><span class="result-info-subtitle">GUID:</span> 508b2a71-662e-4983-ae0c-3cb0c1cd21c5</p>
+
+                <p class="result-info-text blueText"><span class="result-info-subtitle">Bims ID:</span> 49db8db1-585f-4b9e-bbf0-8a59698edc8b</p>
+
+                <p class="result-info-text blueText"><span class="result-info-subtitle">Tam:</span> А-001234</p>
+            </div>
+        </section>
+
+        <section class="report">
+            <h3 class="report-title">Calibration report</h3>
+
+            <div id="table" class="report-table">
+                <div class="report-table-head">
+                    <div class="table-data tableText tableHeadColor">Data</div>
+
+                    <div class="table-bufSolutions tableText tableHeadColor">Used buffer solutions</div>
+
+                    <div class="table-slope tableText tableHeadColor">Slope, %<br> Norm 95-105</div>
+
+                    <div class="table-offset tableText tableHeadColor">Offset, mV Norm±(0-20)</div>
+
+                    <div class="table-user tableText tableHeadColor">User</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
